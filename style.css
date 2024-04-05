@@ -80,6 +80,48 @@ p {
     font-weight: 300;
 }
 
+.img-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img-row img {
+    width: 50%;
+}
+
+.img-row-split {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.vertical-img {
+    flex-grow: 3;
+    max-width: 30%;
+    object-fit: contain;
+}
+
+.landscape-img {
+    flex-grow: 1; /* Adjust the flex-grow value as needed */
+    max-width: 70%;
+    object-fit: contain;
+  }
+
+.img-single img {
+    width: 100%;
+}
+
+.img-col img {
+    width: 100%;
+}
+
+.img-col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .caption {
     text-align: center;
 }
@@ -87,4 +129,8 @@ p {
 .highlight {
     color: #f1f1f1;
     background-color: blue;
+}
+
+.separator {
+    margin-top: 3vh;
 }
